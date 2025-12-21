@@ -2,7 +2,7 @@
   File: main.css
   Project: Ledger & Flow
   Created: 12.10.2025
-  Updated: 12.10.2025
+  Updated: 12.21.2025
   Author: Faro Digital Studio
 --------------------------------------------------------------*/
 
@@ -2658,4 +2658,53 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+/* ============================================================
+   Ledger & Flow — Bootstrap button color overrides (green)
+   ============================================================ */
+
+/* Optional: make Bootstrap’s “primary” color align with brand */
+:root {
+  --bs-primary: var(--accent-color);
+  --bs-primary-rgb: 1, 136, 128; /* #018880 */
+}
+
+/* Solid primary buttons (was blue) */
+.btn-primary {
+  --bs-btn-color: var(--contrast-color);
+  --bs-btn-bg: var(--accent-color);
+  --bs-btn-border-color: var(--accent-color);
+
+  --bs-btn-hover-color: var(--contrast-color);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--accent-color), #000 10%);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--accent-color), #000 10%);
+
+  --bs-btn-focus-shadow-rgb: 1, 136, 128;
+
+  --bs-btn-active-color: var(--contrast-color);
+  --bs-btn-active-bg: color-mix(in srgb, var(--accent-color), #000 14%);
+  --bs-btn-active-border-color: color-mix(in srgb, var(--accent-color), #000 14%);
+
+  --bs-btn-disabled-color: var(--contrast-color);
+  --bs-btn-disabled-bg: color-mix(in srgb, var(--accent-color), transparent 35%);
+  --bs-btn-disabled-border-color: color-mix(in srgb, var(--accent-color), transparent 35%);
+}
+
+/* Outline primary buttons (was blue outline) */
+.btn-outline-primary {
+  --bs-btn-color: var(--accent-color);
+  --bs-btn-border-color: var(--accent-color);
+
+  --bs-btn-hover-color: var(--contrast-color);
+  --bs-btn-hover-bg: var(--accent-color);
+  --bs-btn-hover-border-color: var(--accent-color);
+
+  --bs-btn-focus-shadow-rgb: 1, 136, 128;
+
+  --bs-btn-active-color: var(--contrast-color);
+  --bs-btn-active-bg: var(--accent-color);
+  --bs-btn-active-border-color: var(--accent-color);
+
+  --bs-btn-disabled-color: color-mix(in srgb, var(--accent-color), transparent 35%);
+  --bs-btn-disabled-border-color: color-mix(in srgb, var(--accent-color), transparent 35%);
 }
