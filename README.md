@@ -1,26 +1,32 @@
-# Ledger & Flow — Marketing Site (Static)
+# Ledger & Flow Website (Static)
 
-Public-facing website built for Ledger & Flow with a clean, conversion-first layout and a simple path to booking a discovery call.
+Production-ready marketing site for Ledger & Flow. Built to be fast, clean, and conversion-focused, with a clear path to booking a discovery call and verification links (ProAdvisor + Credly badges).
 
 - Live site: https://ledgerandflow.com/
 
-## Current state
-This site is considered production-ready for current business needs:
-- Clear service overview + trust signals
-- Consistent branded styling (green CTAs)
-- Strong primary conversion path (Calendly)
-- Static hosting compatible (no backend required)
+## Status
+- Current state: complete for current business needs
+- Last updated: 2026-04-01
 
-## Goals
-- Drive discovery calls via Calendly
-- Explain services quickly (bookkeeping first, with optional advisory support)
-- Provide verification paths (ProAdvisor + Credly badges)
-- Keep the site fast, stable, and easy to maintain
+## What this site does
+- Drives discovery calls via Calendly (primary CTA)
+- Explains services clearly (bookkeeping first, plus optional advisory support)
+- Adds trust signals (Credly badges + QuickBooks ProAdvisor listing)
+- Includes a light cross-link to mobile notary services (secondary offering)
+- Runs fully static (GitHub Pages friendly, no backend required)
 
 ## Key links
 - Discovery call: https://calendly.com/ledgerandflow/financial-health-check
 - QuickBooks ProAdvisor: https://proadvisor.intuit.com/app/accountant/search?searchId=dylan-todd
 - Email: mailto:hello@ledgerandflow.com
+- Mobile notary: https://thergvnotary.com
+
+## Notable implementation details
+- Brand palette aligned to logo (green primary with gold accents)
+- CTA/button styling standardized site-wide for a consistent brand look
+- Mobile hero CTA layout fixed (centered and uniform stacking)
+- Icon layout tightened in key sections (services/credibility/contact)
+- FAQ loads collapsed by default
 
 ## Tech stack
 - HTML / CSS / JS
@@ -30,35 +36,29 @@ This site is considered production-ready for current business needs:
 - JSON-LD structured data (AccountingService)
 
 ## Project structure
-- `index.html` — main landing page
-- `assets/css/main.css` — styling (includes Bootstrap button color overrides for brand consistency)
-- `assets/js/main.js` — interactions/behavior
-- `assets/img/` — images, badges, OG assets, logo
+- `index.html` - main landing page
+- `assets/css/main.css` - styling (includes CTA/button overrides + brand polish)
+- `assets/js/main.js` - interactions/behavior
+- `assets/img/` - logo, badges, OG assets, page imagery
 
-## Hosting + contact
+## Hosting
 - Static deployment (GitHub Pages)
-- Contact via:
+- Contact handled via:
   - Calendly booking link
   - Email (`mailto:`)
-- No web form or server-side dependencies
-
-## SEO + analytics
-- Canonical + robots meta
-- Open Graph + Twitter card metadata
-- JSON-LD structured data
-- GA4 via gtag
+- No server-side dependencies
 
 ## Version tracker
 - v0.1.0 (2025-12-15)
-  - Rework template into a Ledger & Flow landing page with a Calendly-first funnel
-  - Remove PHP/contact form dependencies for static hosting
-  - Update metadata (SEO, OG/Twitter) and structured data (JSON-LD)
+  - Replace coming-soon page with a full marketing site and booking funnel
+  - Remove form/backend dependencies for static hosting
+  - Add SEO metadata, OG/Twitter, GA4, and JSON-LD
 - v0.1.1 (2025-12-21)
-  - Tighten hero and CTA messaging
-  - Add logo + icon accents for platform credibility
-  - Standardize CTA styling by overriding Bootstrap primary/outline colors to match brand green
-
-## Future enhancements (optional)
-- Add `sitemap.xml`, `robots.txt`, and `404.html`
-- Add a lightweight blog/resources section (static)
-- Continue copy refinements as services evolve
+  - Add logo and credibility accents (icons + badges)
+  - Standardize CTA styling for consistent brand presentation
+- v0.1.2 (2026-04-01)
+  - Align styling to logo palette (green + gold)
+  - Fix mobile hero CTA alignment and spacing
+  - Improve icon layout in credibility/contact sections
+  - Ensure FAQ loads closed by default
+  - Add a subtle notary cross-link as a secondary offering
